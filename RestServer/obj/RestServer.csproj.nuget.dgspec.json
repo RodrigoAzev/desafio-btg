@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/rodrigo_azevedo/Documentos/desafio/RestServer/RestServer.csproj": {}
+  },
+  "projects": {
+    "/home/rodrigo_azevedo/Documentos/desafio/RestServer/RestServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rodrigo_azevedo/Documentos/desafio/RestServer/RestServer.csproj",
+        "projectName": "RestServer",
+        "projectPath": "/home/rodrigo_azevedo/Documentos/desafio/RestServer/RestServer.csproj",
+        "packagesPath": "/home/rodrigo_azevedo/.nuget/packages/",
+        "outputPath": "/home/rodrigo_azevedo/Documentos/desafio/RestServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rodrigo_azevedo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.424/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

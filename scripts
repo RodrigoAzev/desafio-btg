@@ -1,0 +1,31 @@
+#!/bin/bash                                                                     
+
+if [[ $1 == "rabbit" ]]
+then
+    echo "starting rabbitmq"
+    docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
+    echo "Done."
+fi
+if [[ $1 == "prune" ]]
+then
+    echo "Prunning ..."
+    docker system prune -f -a
+    echo "Done."
+fi
+
+if [[ $1 == "stop" ]]
+then
+    echo "Sotpping..."
+    containerId=`docker ps -a -q --filter ancestor=rabbit-server`
+    docker stop ${containerId}
+    echo "Done."
+fi
+
+if [[ $1 == "restart" ]]
+then
+    echo "Sotpping..."
+    containerId=`docker ps -a -q --filter ancestor=rabbit-server`
+    docker run -d --hostname rmq --name rabbit-server -p 8080:15672 -p 5672:5672 rabbitmq:3-management
+    docker stop ${containerId}
+    echo "Done."
+fi
